@@ -1,5 +1,4 @@
-# MyVim-starter
-
+# MyVim
 ## 介绍
 基于LazyVim进行定制化，文档树使用nvim-tree，文件查询使用fzf，模糊查询使用rg,透明主题配色，添加ranger文件管理器，添加ai代码辅助工具codeium,等等
 ![image](https://github.com/aslingguang/MyVim/assets/74995823/0e85354b-ba80-4c58-84ab-de432ae65edb)
@@ -8,11 +7,9 @@
 ![image](https://github.com/aslingguang/MyVim/assets/74995823/692056c0-9517-40c9-a4aa-9580dc9c5d09)
 ![image](https://github.com/aslingguang/MyVim/assets/74995823/2fbcab50-1080-4e05-aaca-95354a414fca)
 
-[MyVim源码](https://github.com/aslingguang/MyVim)
-
 ## 安装
 ### 1.如果安装了lazyvim，可直接修改`config/lazy.lua`
-![image](https://github.com/aslingguang/MyVim-starter/assets/74995823/0f31d72f-ad81-49b0-be69-f3b61d7acca9)
+![image](https://github.com/aslingguang/MyVim/assets/74995823/e56992ff-83c7-4d1a-8fd6-dcc66ad7db17)
 
 只需修改如下内容
 ```lua
@@ -23,12 +20,13 @@ require("lazy").setup({
     { "aslingguang/MyVim", import = "myvim.plugins" },
     { import = "myvim.my" },
     -- import any extras modules here
-    -- { import = "lazyvim.plugins.extras.lang.typescript" },
-    -- { import = "lazyvim.plugins.extras.lang.json" },
-    -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    -- { import = "myvim.plugins.extras.lang.typescript" },
+    -- { import = "myvim.plugins.extras.lang.json" },
+    -- { import = "myvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
-    -- { import = "plugins" },
+    -- { import = "plugins.disable" },
   },
+})
 ```
 将`{ "LazyVim/LazyVim", import = "lazyvim.plugins" },`修改为` { "aslingguang/MyVim", import = "myvim.plugins" },\n{ import = "myvim.my" },`
 
@@ -64,6 +62,7 @@ nvim
 [LazyVim源码](https://github.com/LazyVim/LazyVim)
 
 [Lazy.nvim源码](https://github.com/folke/lazy.nvim)
+
 
 
 
