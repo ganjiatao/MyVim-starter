@@ -7,14 +7,31 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
-	spec = {
-		-- add LazyVim and import its plugins
-		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
+	spec = {	
+		{ "aslingguang/MyVim", import = "myvim.plugins" },
+		{ import = "myvim.my" },
+		-- { import = "myvim.my.code-runner" },
+		-- { import = "myvim.my.codeium" },
+		-- { import = "myvim.my.comment" },
+		-- { import = "myvim.my.dial" },
+		-- { import = "myvim.my.fzf" },
+		-- { import = "myvim.my.nvim-tree" },
+		-- { import = "myvim.my.ranger" },
 
-		-- { "LazyVim/LazyVim",},
-		{ import = "lazyvim.plugins.extras.coding.codeium" },
-		{ import = "plugins.my"},
+		-- { import = "plugins.chatgpt" },
+		-- { import = "myvim.lazy.telescope" },
+		-- { import = "myvim.lazy.neo-tree" },
+		-- { import = "plugins.codegpt" },
 
+		-- { import = "myvim.config.myoptions" },
+		-- { import = "myvim.config.my" },
+		-- { import = "myvim.lazy" },
+		-- import any extras modules here
+		-- { import = "myvim.plugins.extras.lang.typescript" },
+		-- { import = "myvim.plugins.extras.lang.json" },
+		-- { import = "myvim.plugins.extras.util" },
+		-- { import = "myvim.plugins.extras.ui.mini-animate" },
+		-- import/override with your plugins
 	},
 
 	defaults = {
@@ -44,4 +61,3 @@ require("lazy").setup({
 	},
 	},
 })
-
