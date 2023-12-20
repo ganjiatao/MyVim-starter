@@ -8,7 +8,8 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
 	spec = {	
-		{ "aslingguang/MyVim", import = "myvim.plugins" },
+		{ "aslingguang/MyVim",branch="v1", import = "myvim.plugins" },
+		-- { import = "myvim.plugins.extras.coding.codeium"},
 		{ import = "myvim.my" },
 		-- { import = "myvim.my.code-runner" },
 		-- { import = "myvim.my.codeium" },
@@ -61,3 +62,4 @@ require("lazy").setup({
 	},
 	},
 })
+
